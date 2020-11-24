@@ -92,7 +92,7 @@ Prometheus is installed for monitoring the application along with the Prometheus
 
 ## Autoscaling
 
-The Horizontal Pod Autoscaler automatically scales the number of pods requested based on the observed custom metrics utilization.  If the active nodes in the cluster cannot provide the resources requested to run the pods, the cluster autoscaler can scale the number of nodes up or down to match the load.
+The Horizontal Pod Autoscaler automatically scales the number of pods requested based on the observed custom metrics utilization.   If the active nodes in the cluster cannot provide the resources requested to run the pods, the cluster autoscaler can scale the number of nodes up or down to match the load.
 
 The number of active connections metric \(`nginx_active_connections`\) and its target value \(`targetAverageValue`\) are specified in the *ggs-hpa.yaml* resource manifest, which is used in the Geocoding application deployment process.
 
@@ -132,3 +132,12 @@ For example: If the CPU limit = 1.2, then:
 
 
 [**Next**: Geocoding Application for Kubernetes Deployment Guide](kubernetes/README.md) 
+<!--stackedit_data:
+eyJkaXNjdXNzaW9ucyI6eyI4SlNjcnh4YmxsZXQyNWt4Ijp7In
+RleHQiOiJQcm9tZXRoZXVzIiwic3RhcnQiOjU2ODQsImVuZCI6
+NTY5NH19LCJjb21tZW50cyI6eyJhNlNrNUdGODdsekd1ZHpTIj
+p7ImRpc2N1c3Npb25JZCI6IjhKU2NyeHhibGxldDI1a3giLCJz
+dWIiOiJnaDo2OTE2ODQ0MyIsInRleHQiOiJjb21tZW50IiwiY3
+JlYXRlZCI6MTYwNjIzNDA2NTE2Mn19LCJoaXN0b3J5IjpbLTc2
+MzA1MzYyXX0=
+-->
